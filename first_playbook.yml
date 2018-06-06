@@ -6,4 +6,5 @@
     - name: install basic packages
       action: >
         {{ ansible_pkg_mgr }} name={{ item }} state=present update_cache=yes
-      with_items: {{ pkg_array }}
+      with_items:
+      - {{ pkg_array }}
