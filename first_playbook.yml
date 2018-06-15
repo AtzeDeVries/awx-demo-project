@@ -1,7 +1,10 @@
 ---
-- hosts: all
+- name: Demo playbook
+  hosts: all
+
   vars:
     pkg_array: []
+
   tasks:
     - name: install basic packages
       action: >
